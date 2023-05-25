@@ -1,25 +1,13 @@
-
-import './App.css';
-import NavBar from './components/NavBar/NavBar';
-import LandingPage from './components/LandingPage/LandingPage';
-import About from './components/About/About';
-import Resume from './components/Resume/Resume';
-import Contact from './components/Contact/Contact';
-import Footer from "./components/Footer/Footer";
+import React from 'react'
 import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from "./Assets/home-main.svg";
-import Particle from "./components/Particle";
-import Type from "./Type";
-import  "./style.css";
-import Projects from './components/Projects/Projects';
-// import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
-import "bootstrap/dist/css/bootstrap.min.css";
+import homeLogo from "../../Assets/home-main.svg";
+import Particle from '../Particle';
+import Type from "../Type";
 
-function App() {
+const LandingPage = () => {
   return (
-    <div className="App">
-     <NavBar />
-     {/* <Container fluid className="home-section" id="home">
+    <div className='page' id='landingPage'>
+        <Container fluid className="home-section" id="home">
         <Particle />
         <Container className="home-content">
           <Row>
@@ -51,20 +39,11 @@ function App() {
             </Col>
           </Row>
         </Container>
-      </Container> */}
-      <div className='container'>
-        <LandingPage />
-        <About />
-        <Projects/>
-        <Resume/>
-        <Contact/>
-      </div>
-      <section>
-     
-    </section>
-      <Footer />
+      </Container>
+      
+    
     </div>
-  );
+  )
 }
 
-export default App;
+export default LandingPage

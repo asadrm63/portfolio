@@ -1,10 +1,3 @@
-// import React,{useState} from 'react'
-// import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
-// import resume from '../../Assets/Resume-Asadur-Rahman.pdf'
-// import { Document, Page } from 'react-pdf'
-// import { Document, pdfjs, Page } from "react-pdf";
-// import { pdfjs } from 'react-pdf';
-
 import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
@@ -23,10 +16,11 @@ function Resume() {
   }, []);
 
   return (
-    <div>
+    <div className='purple'>
       <Container fluid className="resume-section">
         <Particle />
         <Row style={{ justifyContent: "center", position: "relative" }}>
+          <h4>Here's my resume</h4>
           <Button
             variant="primary"
             href={pdf}
@@ -40,7 +34,7 @@ function Resume() {
 
         <Row className="resume">
           <Document file={pdf} className="d-flex justify-content-center">
-            <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
+            <Page pageNumber={1} scale={width > 386 ? 1.7 : 0.6} />
           </Document>
         </Row>
 

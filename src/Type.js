@@ -9,7 +9,7 @@ function Type() {
           "Welcome to my portfolio",
           "Software Engineer",
           "Web Designer",
-          "Cloud Engineer",
+          "Amazon Cloud Practioner",
         ],
         autoStart: true,
         loop: true,

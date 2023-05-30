@@ -56,7 +56,7 @@ export default function NavBar(){
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="ms-auto" defaultActiveKey="#home">
                 <Nav.Item>
-                  <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
+                  <Nav.Link as={Link} to="landingPage" onClick={() => updateExpanded(false)}>
                     <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
                   </Nav.Link>
                 </Nav.Item>
@@ -64,17 +64,19 @@ export default function NavBar(){
                 <Nav.Item>
                   <Nav.Link
                     as={Link}
-                    to="/about"
+                    to="about"
                     onClick={() => updateExpanded(false)}
                   >
                     <AiOutlineUser style={{ marginBottom: "2px" }} /> About
                   </Nav.Link>
                 </Nav.Item>
     
+
+    
                 <Nav.Item>
                   <Nav.Link
                     as={Link}
-                    to="/project"
+                    to="projects"
                     onClick={() => updateExpanded(false)}
                   >
                     <AiOutlineFundProjectionScreen
@@ -87,7 +89,7 @@ export default function NavBar(){
                 <Nav.Item>
                   <Nav.Link
                     as={Link}
-                    to="/resume"
+                    to="resume"
                     onClick={() => updateExpanded(false)}
                   >
                     <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
@@ -98,7 +100,7 @@ export default function NavBar(){
     
                 <Nav.Item className="fork-btn">
                   <Button
-                    href="https://github.com/soumyajit4419/Portfolio"
+                    href="https://github.com/asadrm63/Portfolio"
                     target="_blank"
                     className="fork-btn-inner"
                   >

@@ -1,12 +1,34 @@
 import React from 'react'
-import { Container } from 'react-bootstrap'
+// import { Container } from 'react-bootstrap'
+import { Container, Row, Col } from "react-bootstrap";
 
 const About = () => {
   return (
-    <div className='page' id='about'>
+    <Container fluid className='"about-section"' id='about'>
         <Container>
+        <Row style={{ justifyContent: "center", padding: "10px" }}>
+          <Col
+            md={7}
+            style={{
+              justifyContent: "center",
+              paddingTop: "30px",
+              paddingBottom: "50px",
+            }}
+          >
+            <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
+              Know Who <strong className="purple">I'M</strong>
+            </h1>
+          </Col>
+          <Col
+            md={5}
+            style={{ paddingTop: "120px", paddingBottom: "50px" }}
+            className="about-img"
+          >
+            {/* <img src={laptopImg} alt="about" className="img-fluid" /> */}
+          </Col>
+        </Row>
       <h1>About</h1>
-         <p>
+         <p className='purple'>
          Hello there! <br></br>
 
 I'm thrilled to share a little bit about myself. My name is Asad, and I am an aspiring web developer based in the vibrant city of New York. Together with my loving wife and adorable son, I find inspiration and motivation to pursue my passion for web development.
@@ -32,7 +54,7 @@ Thank you for taking the time to get to know me a little better. I am excited ab
 Best regards,<br></br>
 Asad Rahman</p>
 </Container>
-    </div>
+    </Container>
   )
 }
 

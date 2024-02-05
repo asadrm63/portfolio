@@ -13,10 +13,12 @@ const About = () => {
               justifyContent: "center",
               paddingTop: "30px",
               paddingBottom: "50px",
+              color: 'rgb(236, 244, 242)',
             }}
           >
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              Know Who <strong className="purple">I'M</strong>
+            Get to now Who
+               <strong className="purple"> I am</strong>
             </h1>
           </Col>
           <Col
@@ -27,7 +29,9 @@ const About = () => {
             {/* <img src={laptopImg} alt="about" className="img-fluid" /> */}
           </Col>
         </Row>
-      <h1>About</h1>
+      <h1  style={{
+              color: 'rgb(236, 244, 242)',
+            }}>About</h1>
          <p className='purple'>
          Hello there! <br></br>
 

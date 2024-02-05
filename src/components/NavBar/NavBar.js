@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {Link} from "react-scroll"
-import logo from './logo.png';
+// import logo from './logo.png';
 // import {AiOutlineMenu, AiOutlineMenuUnfold} from "react-icons/ai";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
@@ -41,7 +41,7 @@ export default function NavBar(){
         >
           <Container>
             <Navbar.Brand href="/" className="d-flex">
-              <img src={logo} className="img-fluid logo" alt="brand" />
+              {/* <img src={logo} className="img-fluid logo" alt="brand" /> */}
             </Navbar.Brand>
             <Navbar.Toggle
               aria-controls="responsive-navbar-nav"

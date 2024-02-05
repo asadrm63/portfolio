@@ -23,7 +23,9 @@ const Projects = () => {
             imgPath={skigame}
             isBlog={false}
             title="Ski Game"
-            description='I built my first game using Canvas. Based on the Windows Classic Ski Free"'
+            description='A  ski game  runner inspired by Ski Free with  2D gameplay..
+            Created tracking of different objects using vanilla Javascript and advanced arithmetic creating interactive play
+         Created swarm of enemies and in game polarity/gravity  using  vanilla Javascript and advanced arithmetic achieving  difficult and slightly unpredictable gameplay"'
             ghLink="https://github.com/asadrm63/game-project/"
             demoLink="https://asadrm63.github.io/game-project/"
           />

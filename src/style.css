@@ -725,3 +725,7 @@ html {
   .fork-btn-inner::after {
     display: none !important;
   }
+
+  h1 {
+    color: rgb(236, 244, 242);
+  }
